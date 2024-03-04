@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background-image: url("images/background.png");
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+    padding: 32px 0;
+    font-family: 'Montserrat-Medium', serif;
+}
+.background_black{
+    position: absolute;
+    z-index: -1;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.header .nav a{
+    text-decoration: none;
+}
+.header .nav p {
+    margin-right: 64px;
+    font-size: 16px;
+    color: white;
+
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    color: #FF8A00;
+}
+
+.section1 {
+    display: flex;
+    color: white;
+    padding-bottom: 120px;
+}
+
+.section1_text {
+    padding-top: 160px;
+}
+
+.section1_text p {
+    max-width: 600px;
+    font-size: 40px;
+    line-height: 58px;
+    margin-bottom: 20px;
+}
+
+.section1_text img {
+    margin-bottom: 40px;
+}
+
+.section1_photo img {
+    margin-right: -60px;
+}
+
+.section1_text h4 {
+    max-width: 524px;
+    margin-bottom: 48px;
+}
+
+.view_menu_button {
+    background-color: #FF8A00;
+    padding: 20px 48px;
+    color: white;
+    border: 0;
+}
+
+.section2 {
+    padding-bottom: 120px;
+}
+
+.section2_content {
+    max-width: 1096px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.section2_content::after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: -12px;
+    height: 24px;
+    background-color: #FF8A00;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.section2_content_text {
+    max-width: 600px;
+    background-color: white;
+    padding: 48px;
+    border-radius: 10px;
+}
+
+.section2_content_text_text1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.section2_content_text img {
+    margin-bottom: 24px;
+}
+
+.section2_content_text_text2 {
+    margin-bottom: 20px;
+}
+
+.section2_content_text_text3 {
+    margin-bottom: 36px;
+}
+
+.bg_orange {
+    width: 1096px;
+    height: 12px;
+    align-items: center;
+}
