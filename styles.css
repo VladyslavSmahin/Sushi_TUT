@@ -9,6 +9,12 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'Montserrat-Medium';
@@ -41,17 +47,21 @@ body {
     padding: 32px 0;
     font-family: 'Montserrat-Medium', serif;
 }
-.background_black{
+
+.background_black {
     position: absolute;
     z-index: -1;
 }
+
 .nav {
     display: flex;
     align-items: center;
 }
-.header .nav a{
+
+.header .nav a {
     text-decoration: none;
 }
+
 .header .nav p {
     margin-right: 64px;
     font-size: 16px;
@@ -76,6 +86,7 @@ body {
 }
 
 .section1_text p {
+    font-family: Montserrat-SemiBold, sans-serif;
     max-width: 600px;
     font-size: 40px;
     line-height: 58px;
@@ -86,21 +97,34 @@ body {
     margin-bottom: 40px;
 }
 
+.section1_text h4 {
+    max-width: 524px;
+    margin-bottom: 48px;
+    font-family: Montserrat-Regular, sans-serif;
+}
+.section1_text_span{
+    font-family: Montserrat-Medium, sans-serif;
+}
+
 .section1_photo img {
     margin-right: -60px;
 }
 
-.section1_text h4 {
-    max-width: 524px;
-    margin-bottom: 48px;
-}
-
 .view_menu_button {
+    font-family: Montserrat-SemiBold, sans-serif;
     background-color: #FF8A00;
     padding: 20px 48px;
     color: white;
     border: 0;
 }
+.order_now{
+    font-family: Montserrat-SemiBold, sans-serif;
+    background-color: #FF8A00;
+    padding: 20px 48px;
+    color: white;
+    border: 0;
+}
+
 
 .section2 {
     padding-bottom: 120px;
@@ -127,6 +151,7 @@ body {
 }
 
 .section2_content_text {
+
     max-width: 600px;
     background-color: white;
     padding: 48px;
@@ -134,6 +159,7 @@ body {
 }
 
 .section2_content_text_text1 {
+    font-family: Montserrat-SemiBold, sans-serif;
     font-size: 40px;
     margin-bottom: 12px;
 }
@@ -143,10 +169,12 @@ body {
 }
 
 .section2_content_text_text2 {
+    font-family: Montserrat-Regular, sans-serif;
     margin-bottom: 20px;
 }
 
 .section2_content_text_text3 {
+    font-family: Montserrat-Regular, sans-serif;
     margin-bottom: 36px;
 }
 
@@ -154,4 +182,45 @@ body {
     width: 1096px;
     height: 12px;
     align-items: center;
+}
+
+.section3 {
+    color: white;
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+.section3_head {
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 40px;
+}
+.section4{
+    padding-bottom: 120px;
+    text-align: center;
+}
+.section4_text{
+    color: white;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 40px;
+}
+.section4_instructions{
+    display: flex;
+    justify-content: space-between;
+}
+.instruction{
+    box-sizing: border-box;
+    max-width: 312px;
+    height: 204px;
+    border-radius: 20px;
+    padding: 32px 20px 0;
+    background-color: white;
+}
+.instruction_icon{
+
+}
+.instruction_text1{
+    margin-bottom: 12px;
+}
+.instruction_text2{
+    max-width: 250px;
 }
