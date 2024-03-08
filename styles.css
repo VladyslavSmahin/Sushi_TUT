@@ -33,6 +33,7 @@
 
 body {
     background-image: url("images/background.png");
+
 }
 
 .container {
@@ -221,12 +222,15 @@ body {
 
 .slider-btn-left {
     left: 0;
+    transform: translateY(-50%) rotate(180deg);
 }
 
 .slider-btn-right {
     right: 0;
 }
-
+.sliderArrowLeft{
+    margin-right: 10px;
+}
 .section3_head {
     font-family: "Montserrat-SemiBold", sans-serif;
     font-size: 40px;
@@ -377,13 +381,6 @@ body {
     justify-content: space-between;
     width: 554px;
 }
-
-.background_black_bottom {
-    position: fixed;
-    bottom: 0;
-    z-index: -1;
-}
-
 .footerBox2 {
     display: flex;
     justify-content: center;
@@ -442,4 +439,9 @@ body {
     position: absolute;
     left: -32px;
     top: 10px;
+}
+.background_black_bottom {
+    position: relative;
+    bottom: 0;
+    z-index: -1;
 }
