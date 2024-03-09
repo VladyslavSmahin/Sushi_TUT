@@ -62,7 +62,10 @@ body {
     align-items: center;
 }
 
-.header .nav a {
+.header .nav a,
+.footerNav a{
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: white;
     text-decoration: none;
 }
 
@@ -446,7 +449,9 @@ body {
     max-width: 256px;
     margin-bottom: 32px;
 }
-.footerArrowTop {
+.footerArrowTopButton {
+    border: none;
+    background: transparent;
     position: fixed;
     bottom: 100px;
     right: 15px;
