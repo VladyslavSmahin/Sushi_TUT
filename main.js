@@ -39,5 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
             arrowButton.style.display = 'inline';
         }
     }
+    VisibleArrow()
     window.addEventListener('scroll',VisibleArrow )
 });
