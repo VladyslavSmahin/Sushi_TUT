@@ -15,11 +15,11 @@
         <img src="images/logo.svg" alt="img">
     </div>
     <nav class="nav">
-        <a href=""><p>Про нас</p></a>
-        <a href=""><p>Меню</p></a>
-        <a href=""><p>Як замовити</p></a>
-        <a href=""><p>Доставка</p></a>
-        <a href=""><p>Контакти</p></a>
+        <a href="#section2"><p>Про нас</p></a>
+        <a href="#section3"><p>Меню</p></a>
+        <a href="#section4"><p>Як замовити</p></a>
+        <a href="#section5"><p>Доставка</p></a>
+        <a href="#footer"><p>Контакти</p></a>
     </nav>
     <div class="number">
         <img src="images/icon_phone.svg" alt="img">
@@ -27,7 +27,7 @@
     </div>
 </header>
 <main class="main container">
-    <section class="section1 main_section1 ">
+    <section id="section1" class="section1 main_section1 ">
         <div class="section1_text">
             <p>Доставка найсмачніших суші
                 по місту Немирів</p>
@@ -40,7 +40,7 @@
             <img src="images/photo1.png" alt="img">
         </div>
     </section>
-    <section class="section2">
+    <section id="section2" class="section2">
         <div class="section2_content">
             <img src="images/photo_about.jpg" alt="img">
             <div class="section2_content_text">
@@ -56,7 +56,7 @@
             </div>
         </div>
     </section>
-    <section class="section3">
+    <section id="section3" class="section3">
         <p class="section3_head">Меню</p>
         <img class="section3_line" src="images/line.png" alt="img">
         <div class="slider-container">
@@ -74,11 +74,11 @@
             <div class="slider-btn slider-btn-left"><img class="sliderArrowLeft" src="images/Arrow%20right.png" alt="arrow"> </div>
             <div class="slider-btn slider-btn-right"><img class="sliderArrowRight" src="images/Arrow%20right.png" alt="arrow"></div>
         </div>
-        <button class="order_now">Замовити зараз</button>
+        <button class="order_now_button">Замовити зараз</button>
     </section>
-    <section class="section4">
+    <section id="section4" class="section4">
         <p class="section4_text">Як замовити ?</p>
-        <img src="images/line.png" alt="img">
+        <img class="section4Line" src="images/line.png" alt="img">
         <div class="section4_instructions">
             <div class="instructionWrapper">
                 <img class="instruction_icon" src="images/Icon1.png" alt="img">
@@ -91,7 +91,7 @@
 
             </div>
             <div>
-                <img src="images/Icon2.png" alt="img">
+                <img class="instruction_icon" src="images/Icon2.png" alt="img">
                 <div class="instruction">
                     <p class="instruction_text1">Крок 2</p>
                     <p class="instruction_text2">Наш менеджер зв’язується
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div>
-                <img src="images/Icon3.png" alt="img">
+                <img class="instruction_icon" src="images/Icon3.png" alt="img">
                 <div class="instruction">
                     <p class="instruction_text1">Крок 3</p>
                     <p class="instruction_text2">Швидка доставка замовлення
@@ -108,7 +108,7 @@
                 </div>
             </div>
             <div>
-                <img src="images/Icon4.png" alt="img">
+                <img class="instruction_icon" src="images/Icon4.png" alt="img">
                 <div class="instruction">
                     <p class="instruction_text1">Крок 4</p>
                     <p class="instruction_text2">Ще один задоволений
@@ -117,7 +117,7 @@
             </div>
         </div>
     </section>
-    <section class="section5">
+    <section id="section5" class="section5">
         <div class="section5Content">
             <div>
                 <img class="map" src="images/Map.png" alt="img">
@@ -127,27 +127,27 @@
                 <img class="section5DeliveryLine" src="images/line.png" alt="img">
                 <p class="section5FreeDeliveryText">Безкоштовна доставка на замовлення:</p>
                 <div class="section5Zones">
-                    <div class="section5Zone">
-                        <p>Зелена зона</p>
-                        <p>від 600грн</p>
+                    <div class="section5Zone section5ZoneCart1">
+                        <p class="section5ZoneText1 section5ZoneCart1Text1">Зелена зона</p>
+                        <p class="section5ZoneText2">від 600грн</p>
                     </div>
-                    <div class="section5Zone">
-                        <p>Жовта зона</p>
-                        <p>від 750грн</p>
+                    <div class="section5Zone section5ZoneCart2">
+                        <p class="section5ZoneText1 section5ZoneCart2Text1">Жовта зона</p>
+                        <p class="section5ZoneText2">від 750грн</p>
                     </div>
-                    <div class="section5Zone">
-                        <p>Червона зона</p>
-                        <p>від 900грн</p>
+                    <div class="section5Zone section5ZoneCart3">
+                        <p class="section5ZoneText1 section5ZoneCart3Text1">Червона зона</p>
+                        <p class="section5ZoneText2">від 900грн</p>
                     </div>
                 </div>
-                <button class="order_now">Замовити зараз</button>
+                <button class="order_now_button">Замовити зараз</button>
             </div>
         </div>
     </section>
 </main>
-<footer>
+<footer id="footer">
     <div class="footerContent">
-        <img src="images/Photo6.png" alt="img">
+        <img class="footerContentImage1" src="images/Photo6.png" alt="img">
         <div class="footerBox1">
             <img class="footerLogo" src="images/logo.svg" alt="logo">
             <div class="footerNav">
@@ -168,6 +168,9 @@
                 </a>
             </div>
         </div>
+        <button type="button">
+            <img class="footerArrowTop" id="footerArrowTop" src="images/Arrow%20right.png" alt="img">
+        </button>
         <div class="footerBox2">
             <div class="footerBox2Cart footerBox2Cart1">
                 <p class="footerBox2CartText1 footerBox2Cart1Text1">Працюємо:</p>
@@ -187,6 +190,7 @@
         </div>
     </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
