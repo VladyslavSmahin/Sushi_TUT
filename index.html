@@ -8,24 +8,76 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>СУШІ ТУТ</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 <body>
-<header class="header container">
-    <div class="logo">
-        <img src="images/logo.svg" alt="img">
+<header class="header">
+    <div class="headerMain">
+        <div class="logo">
+            <img src="images/logo.svg" alt="img">
+        </div>
+        <nav>
+            <ul class="navUl">
+                <li>
+                    <a href="#section2"><p>Про нас</p></a>
+                </li>
+                <li>
+                    <a href="#section3"><p>Меню</p></a>
+                </li>
+                <li>
+                    <a href="#section4"><p>Як замовити</p></a>
+                </li>
+                <li>
+                    <a href="#section5"><p>Доставка</p></a>
+                </li>
+                <li>
+                    <a href="#footer"><p>Контакти</p></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="number">
+            <img src="images/icon_phone.svg" alt="img">
+            <h3>098 577 1022</h3>
+        </div>
     </div>
-    <nav class="nav">
-        <a href="#section2"><p>Про нас</p></a>
-        <a href="#section3"><p>Меню</p></a>
-        <a href="#section4"><p>Як замовити</p></a>
-        <a href="#section5"><p>Доставка</p></a>
-        <a href="#footer"><p>Контакти</p></a>
-    </nav>
-    <div class="number">
-        <img src="images/icon_phone.svg" alt="img">
-        <h3>098 577 1022</h3>
+    <div class="adaptiveHeader">
+        <div class="adaptiveHeaderContent ">
+            <div class="adaptiveHeaderLogo">
+                <img src="images/logo.svg" alt="img">
+            </div>
+            <div class="adaptiveHeaderNumber">
+                <img src="images/icon_phone.svg" alt="img">
+                <h3>098 577 1022</h3>
+            </div>
+            <div class="adaptiveHeaderMenu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav class="adaptiveHeaderNav">
+            <ul class="adaptiveHeaderUl">
+                <li>
+                    <a href="#section2"><p>Про нас</p></a>
+                </li>
+                <li>
+                    <a href="#section3"><p>Меню</p></a>
+                </li>
+                <li>
+                    <a href="#section4"><p>Як замовити</p></a>
+                </li>
+                <li>
+                    <a href="#section5"><p>Доставка</p></a>
+                </li>
+                <li>
+                    <a href="#footer"><p>Контакти</p></a>
+                </li>
+            </ul>
+        </nav>
     </div>
 </header>
+
+
 <main class="main container">
     <section id="section1" class="section1 main_section1 ">
         <div class="section1_text">
@@ -33,8 +85,10 @@
                 по місту Немирів</p>
             <img src="images/line.png" alt="img">
             <h4>Пориньте в атмосферу смаку та відчуєте неперевершеність
-                японської кухні разом із <span class="section1_text_span">“СУШІ ТУТ”</span> .</h4>
-            <button type="button" class="view_menu_button">Переглянути меню</button>
+                японської кухні разом із <span class="section1_text_span">“СУШІ ТУТ”</span></h4>
+            <a href="#section3" class="view_menu_button">
+                Переглянути меню
+            </a>
         </div>
         <div class="section1_photo">
             <img src="images/photo1.png" alt="img">
@@ -42,7 +96,7 @@
     </section>
     <section id="section2" class="section2">
         <div class="section2_content">
-            <img src="images/photo_about.jpg" alt="img">
+            <img src="images/photo_about.png" alt="img">
             <div class="section2_content_text">
                 <p class="section2_content_text_text1">Про нас</p>
                 <img src="images/line.png" alt="img">
@@ -52,7 +106,9 @@
                     відчує себе як удома, а кожна страва залишить приємні спогади.</p>
                 <p class="section2_content_text_text3">Ми запрошуємо вас відвідати “Суші тут” і насолодитися смаком
                     японської кухні в найкращому виконанні!</p>
-                <button type="button" class="view_menu_button">Переглянути меню</button>
+                <a href="#section3" class="view_menu_button">
+                    Переглянути меню
+                </a>
             </div>
         </div>
     </section>
@@ -71,10 +127,12 @@
                 <img class="slide8 slide" src="images/8.png" alt="img">
                 <img class="slide9 slide" src="images/9.png" alt="img">
             </div>
-            <div class="slider-btn slider-btn-left"><img class="sliderArrowLeft" src="images/Arrow%20right.png" alt="arrow"> </div>
-            <div class="slider-btn slider-btn-right"><img class="sliderArrowRight" src="images/Arrow%20right.png" alt="arrow"></div>
+            <div class="slider-btn slider-btn-left"><img class="sliderArrowLeft" src="images/Arrow%20right.png"
+                                                         alt="arrow"></div>
+            <div class="slider-btn slider-btn-right"><img class="sliderArrowRight" src="images/Arrow%20right.png"
+                                                          alt="arrow"></div>
         </div>
-        <button class="order_now_button">Замовити зараз</button>
+        <button id="order_now_button1" class="order_now_button">Замовити зараз</button>
     </section>
     <section id="section4" class="section4">
         <p class="section4_text">Як замовити ?</p>
@@ -140,10 +198,30 @@
                         <p class="section5ZoneText2">від 900грн</p>
                     </div>
                 </div>
-                <button class="order_now_button">Замовити зараз</button>
+                <button id="order_now_button2" class="order_now_button section5ZonesButton">Замовити зараз</button>
             </div>
         </div>
     </section>
+    <div class="popupOrder">
+        <div class="popupOrderContent" id="popupOrderContent">
+            <p id="closePopupButton1" class="cross">&#10006;</p>
+            <p class="popupOrderHead">Залишити заявку</p>
+            <form class="popupOrderForm">
+                <label class="popupOrderFormLabel" for="inputName">Ім'я*</label>
+                <input class="popupInputName" id="inputName" placeholder="Введіть ім'я" required>
+                <label class="popupOrderFormLabel" for="inputNumber">Номер телефону*</label>
+                <input class="popupInputNumber" id="inputNumber" placeholder="Введіть номер телефону" required>
+                <button type="submit" id="popupOrderFormButton" class="popupOrderFormButton">Відправити</button>
+            </form>
+        </div>
+        <div class="popupTYContent" id="popupTYContent">
+            <p id="closePopupButton2" class="popupTYcross">&#10006;</p>
+            <p class="popupTYHead">Вашу заявку прийнято</p>
+            <p class="popupTYContentText1">Очікуйте, будь ласка, ми
+                вам обов’язково зателефонуємо.</p>
+            <p class="popupTYContentText2">Дякуємо, що обираєте нас ❤️</p>
+        </div>
+    </div>
 </main>
 <footer id="footer">
     <div class="footerContent">

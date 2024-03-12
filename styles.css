@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 @font-face {
     font-family: 'Montserrat-Bold';
     src: url('fonts/Montserrat-Bold.ttf') format('truetype');
@@ -43,7 +45,7 @@ body {
     margin: 0 auto;
 }
 
-.header {
+.headerMain {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -51,25 +53,32 @@ body {
     padding: 32px 0;
     font-family: 'Montserrat-Medium', serif;
 }
+.adaptiveHeader{
+    display: none;
+}
+.navUl {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.navUl a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
 
 .background_black {
     position: absolute;
     z-index: -1;
 }
-
-.nav {
-    display: flex;
-    align-items: center;
-}
-
-.header .nav a,
-.footerNav a{
+.header .navUl a,
+.footerNav a {
     font-family: 'Montserrat-Regular', sans-serif;
     color: white;
     text-decoration: none;
 }
 
-.header .nav p {
+.header .navUl p {
     margin-right: 64px;
     font-size: 16px;
     color: white;
@@ -125,6 +134,7 @@ body {
     color: white;
     border: 0;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .order_now_button {
@@ -135,7 +145,9 @@ body {
     border: 0;
     border-radius: 5px;
 }
-
+.section5ZonesButton{
+    width: 262px;
+}
 .section2 {
     padding-bottom: 120px;
 }
@@ -238,11 +250,12 @@ body {
 }
 
 .slider-btn-right {
-    right: 0;
+    right: 4px;
 }
 
-.sliderArrowLeft {
-    margin-right: 10px;
+.slider-btn-left {
+    margin-right: 0;
+    display: none;
 }
 
 .section3_head {
@@ -449,6 +462,7 @@ body {
     max-width: 256px;
     margin-bottom: 32px;
 }
+
 .footerArrowTopButton {
     border: none;
     background: transparent;
@@ -456,6 +470,7 @@ body {
     bottom: 100px;
     right: 15px;
     transform: rotate(270deg);
+    z-index: 4;
 }
 
 .footerNav {
@@ -529,4 +544,83 @@ body {
     position: relative;
     bottom: 0;
     z-index: -1;
+}
+.popupOrder {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.popupOrderContent {
+    width: 430px;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+.cross{
+    align-self: flex-end;
+    margin-bottom: 8px;
+}
+.popupOrderHead
+{
+    font-family: "Montserrat-Regular", sans-serif;
+    align-self: center;
+    margin-bottom: 32px;
+}
+.popupInputName,
+.popupInputNumber{
+    width: 312px;
+    height: 50px;
+    margin-top: 9px;
+    margin-bottom: 32px;
+}
+.popupOrderForm{
+    margin: 0 60px;
+    display: flex;
+    flex-direction: column;
+}
+.popupOrderFormButton{
+    background-color: #FF8A00;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 15px 0;
+    margin-bottom: 50px;
+}
+.popupInputName::placeholder,
+.popupInputNumber::placeholder{
+    font-family: "Montserrat-Regular", sans-serif;
+    padding-left: 10px;
+}
+.popupTYcross{
+    text-align: end;
+margin-bottom: 88px;
+}
+.popupTYHead{
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 24px;
+    align-self: center;
+    margin-bottom: 32px;
+}
+.popupTYContent{
+    width: 430px;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.popupTYContentText1{
+    font-family: "Montserrat-Medium", sans-serif;
+    margin-bottom: 32px;
+}
+.popupTYContentText2{
+    font-family: "Montserrat-Medium", sans-serif;
+    margin-bottom: 136px;
 }
