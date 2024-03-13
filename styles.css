@@ -53,6 +53,10 @@ body {
     padding: 32px 0;
     font-family: 'Montserrat-Medium', serif;
 }
+.logo{
+    margin-left: 70px;
+}
+
 .adaptiveHeader{
     display: none;
 }
@@ -89,6 +93,7 @@ body {
     display: flex;
     align-items: center;
     color: #FF8A00;
+    margin-right: 50px;
 }
 
 .section1 {
@@ -109,7 +114,7 @@ body {
     margin-bottom: 20px;
 }
 
-.section1_text img {
+.section1_text_Line{
     margin-bottom: 40px;
 }
 
@@ -123,7 +128,7 @@ body {
     font-family: Montserrat-Medium, sans-serif;
 }
 
-.section1_photo img {
+.section1_photoImg {
     margin-right: -60px;
 }
 
@@ -159,7 +164,9 @@ body {
     position: relative;
     z-index: 2;
 }
-
+.section2_contentImgMobile{
+    display: none;
+}
 .section2_content::after {
     content: "";
     position: absolute;
@@ -461,13 +468,14 @@ body {
 .footerLogo {
     max-width: 256px;
     margin-bottom: 32px;
+
 }
 
 .footerArrowTopButton {
     border: none;
     background: transparent;
     position: fixed;
-    bottom: 100px;
+    bottom: 160px;
     right: 15px;
     transform: rotate(270deg);
     z-index: 4;

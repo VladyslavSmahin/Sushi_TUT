@@ -23,7 +23,7 @@
     .adaptiveHeaderNumber {
         display: flex;
         align-items: center;
-        margin-right: 40%;
+        margin-right: 43%;
     }
 
     .adaptiveHeaderNumber h3 {
@@ -71,7 +71,8 @@
         text-decoration: none;
         font-size: 20px;
     }
-    .adaptiveHeaderUl li{
+
+    .adaptiveHeaderUl li {
         margin-bottom: 30px;
     }
 
@@ -80,14 +81,37 @@
         cursor: pointer;
         z-index: 5;
         right: 3%;
+        top: 3%;
+        background-color: rgb(0, 0, 0, 0.3);
+        padding: 0 3px;
+        border-radius: 3px;
+        opacity: 70%;
     }
 
     .bar {
         width: 30px;
-        height: 3px;
+        height: 4px;
         background-color: white;
         margin: 6px 0;
-        transition: 0.4s;
+    }
+
+    .closeIcon {
+        background-color: rgb(0, 0, 0, 0.3);
+        padding: 10px 2px;
+        border-radius: 3px;
+    }
+
+    .closeIcon .bar1 {
+        display: none;
+    }
+
+    .closeIcon .bar2 {
+        transform: rotate(45deg);
+        position: absolute;
+    }
+
+    .closeIcon .bar3 {
+        transform: rotate(-45deg);
     }
 
     .header .nav p {
@@ -132,4 +156,320 @@
         top: -19px;
         left: -439px;
     }
+}
+
+@media screen and (max-width: 769px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .adaptiveHeaderLogoImg {
+        width: 136px;
+    }
+
+    .adaptiveHeaderNumber {
+        margin-right: 39%;
+    }
+
+    .adaptiveHeaderMenu-icon {
+        top: 4%;
+    }
+
+    .section1_photoImg {
+        width: 508px;
+        margin-left: -66px;
+    }
+
+    .section1_text {
+        padding-top: 30px;
+    }
+
+    .section1_text p {
+        font-size: 24px;
+        width: 378px;
+        line-height: 35px;
+    }
+
+    .section1_text h4 {
+        font-size: 14px;
+        max-width: 296px;
+    }
+
+    .view_menu_button {
+        padding: 15px 35px;
+    }
+
+    .order_now_button {
+        padding: 15px 35px;
+        width: 216px;
+    }
+
+    .section2_contentImg {
+        max-width: 254px;
+        max-height: 378px;
+    }
+
+    .section2_content_text {
+        padding: 40px;
+    }
+
+    .section2_content_text_text1 {
+        font-size: 24px;
+    }
+
+    .section2_content_text_text2,
+    .section2_content_text_text3 {
+        font-size: 14px;
+    }
+
+    .section4_text {
+        font-size: 24px;
+    }
+
+    .section4Line {
+        margin-bottom: 0;
+    }
+
+    .section4_instructions {
+        flex-wrap: wrap;
+    }
+
+    .instruction {
+        max-width: 348px;
+    }
+
+    .map {
+        max-width: 365px;
+    }
+
+    .section5Zones {
+        margin-bottom: 20px;
+    }
+
+    .section5Delivery {
+        padding: 12px 32px 32px 32px;
+        margin-top: -11px;
+    }
+
+    .section5DeliveryHead {
+        font-size: 20px;
+        max-width: 222px;
+    }
+
+    .section5FreeDeliveryText,
+    .section5ZoneText1,
+    .section5ZoneText2 {
+        font-size: 14px;
+    }
+
+    .section5DeliveryLine {
+        margin-bottom: 12px;
+    }
+
+    .section5FreeDeliveryText {
+        margin-bottom: 20px;
+    }
+
+    .footerBox2 {
+        font-size: 14px;
+    }
+
+    .footerArrowTop {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .adaptiveHeaderContent {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        max-width: 440px;
+    }
+
+    .adaptiveHeaderLogo {
+        padding-left: 29%;
+        padding-bottom: 24px;
+        margin: 0;
+        border-bottom: 2px solid #333333;
+        width: 100%;
+    }
+
+    .adaptiveHeaderLogoImg {
+        width: 180px;
+    }
+
+    .adaptiveHeaderNumber {
+        padding-top: 15px;
+        padding-left: 61%;
+        padding-bottom: 13px;
+        margin-right: 0;
+        border-bottom: 2px solid #333333;
+        width: 100%;
+    }
+
+    .adaptiveHeaderMenu-icon {
+        top: 20%;
+        left: 5%;
+        right: auto;
+    }
+
+    .section1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section1_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section1_text p {
+        text-align: center;
+    }
+
+    .section1_text h4 {
+        text-align: center;
+        margin-bottom: 28px;
+    }
+
+    .section1_text_Line {
+        margin-bottom: 360px;
+    }
+
+    .section1_photoImg {
+        max-width: 450px;
+        margin: 0;
+        position: absolute;
+        top: 360px;
+        right: 6px;
+    }
+
+    .section2_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section2_contentImg {
+        display: none;
+    }
+
+    .section2_contentImgMobile {
+        display: inline;
+    }
+
+    .section5Content {
+        flex-direction: column;
+    }
+
+    .section2_content_text {
+        border-radius: 0;
+    }
+
+    .section2_content::after {
+        bottom: -7px;
+    }
+
+    .section2 .view_menu_button {
+        padding: 15px 82px;
+        margin-left: 13px;
+    }
+
+    .section4_text {
+        font-size: 32px;
+    }
+
+    .instruction {
+        max-width: 440px;
+    }
+
+    .instruction_text2 {
+        font-size: 20px;
+        max-width: 316px;
+        padding: 0 62px;
+    }
+
+    .map {
+        max-width: 440px;
+    }
+
+    .section5Delivery {
+        margin-top: -4px;
+        max-width: 440px;
+    }
+
+    .section5DeliveryHead {
+        font-size: 24px;
+        max-width: 222px;
+    }
+
+    .section5FreeDeliveryText {
+        font-size: 16px;
+        padding: 0 76px 0 0;
+    }
+
+    .section5Delivery::after {
+        left: 20px;
+    }
+
+    .section5 .order_now_button {
+        padding: 15px 96px;
+        width: 328px;
+        margin-left: 22px;
+    }
+
+    .footerBox1 {
+        padding-bottom: 0;
+    }
+
+    .footerNav {
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .footerNav > * {
+        margin-bottom: 40px;
+    }
+
+    .footerBox2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerBox2 > * {
+        margin-bottom: 24px;
+
+    }
+
+    .footerBox2Cart {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .footerBox2Cart1 {
+        margin-right: 16px;
+    }
+
+    .footerBox2Cart1::before {
+        left: 70px;
+        top: -4px;
+    }
+
+    .footerBox2Cart2 {
+        margin-right: 24px;
+    }
+
+    .footerBox2Cart2::before {
+        left: 101px;
+        top: -6px;
+    }
+
+    .footerBox2Cart3::before {
+        left: 44px;
+        top: -4px;
+    }
+
 }
