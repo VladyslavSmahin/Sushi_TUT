@@ -470,7 +470,9 @@ body {
     margin-bottom: 32px;
 
 }
-
+.footerArrowTop{
+    border: none;
+}
 .footerArrowTopButton {
     border: none;
     background: transparent;
@@ -479,8 +481,12 @@ body {
     right: 15px;
     transform: rotate(270deg);
     z-index: 4;
-}
+    opacity: 70%;
 
+}
+.footerArrowTopButton:hover{
+    opacity: 100%;
+}
 .footerNav {
     font-family: "Montserrat-Regular", sans-serif;
     display: flex;

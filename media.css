@@ -302,7 +302,8 @@
 
     .adaptiveHeaderNumber {
         padding-top: 15px;
-        padding-left: 61%;
+        padding-left: 0;
+        justify-content: center;
         padding-bottom: 13px;
         margin-right: 0;
         border-bottom: 2px solid #333333;
@@ -310,7 +311,7 @@
     }
 
     .adaptiveHeaderMenu-icon {
-        top: 20%;
+        top: 5%;
         left: 5%;
         right: auto;
     }
@@ -318,6 +319,7 @@
     .section1 {
         flex-direction: column;
         align-items: center;
+        padding-bottom: 60px;
     }
 
     .section1_text {
@@ -351,6 +353,7 @@
         display: flex;
         flex-direction: column;
     }
+
 
     .section2_contentImg {
         display: none;
@@ -450,7 +453,7 @@
     }
 
     .footerBox2Cart1 {
-        margin-right: 16px;
+        margin-right: 29px;
     }
 
     .footerBox2Cart1::before {
@@ -459,7 +462,7 @@
     }
 
     .footerBox2Cart2 {
-        margin-right: 24px;
+        margin-right: 39px;
     }
 
     .footerBox2Cart2::before {
@@ -468,8 +471,58 @@
     }
 
     .footerBox2Cart3::before {
-        left: 44px;
+        left: 53px;
         top: -4px;
     }
+    .footerBox2Cart3 {
+        margin-left: -31px;
+    }
 
+}
+@media screen and (max-width: 361px) {
+    .container{
+        max-width: 328px;
+    }
+    .adaptiveHeaderLogo {
+        padding-left: 24%;
+    }
+    .section1_text p {
+        width: 328px;
+    }
+    .section1_photoImg {
+        max-width: 376px;
+        right: -36px;
+    }
+    .section2 .view_menu_button {
+        padding: 15px 29px;
+    }
+    .footerArrowTopButton{
+        opacity: 100%;
+    }
+    .section4{
+        padding-bottom: 60px;
+    }
+    .section4_text {
+        font-size: 24px;
+    }
+    .instruction{
+        height: 172px;
+    }
+    .instruction_text1{
+        margin-top: 19px;
+    }
+    .instruction_text2 {
+        font-size: 14px;
+    }
+    .map {
+        max-width: 328px;
+    }
+    .section5Delivery {
+        max-width: 328px;
+        box-sizing: border-box;
+    }
+    .section5 .order_now_button {
+        width: 296px;
+        margin-left: -17px;
+    }
 }
