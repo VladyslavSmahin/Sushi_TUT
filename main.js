@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-   /* const slider = document.querySelector('.slider');
+    const slider = document.querySelector('.slider');
     const slides = document.querySelectorAll('.slide');
     const totalSlides = slides.length;
     const slideWidth = slides[0].clientWidth;
@@ -24,17 +24,20 @@ document.addEventListener("DOMContentLoaded", function () {
             leftArrow.style.display = "inline"
         }
         currentIndex = index;
-        const offset = -((currentIndex * slideWidth) + (40 * currentIndex));
+        const offset = -((currentIndex * slideWidth));
         slider.style.transform = `translateX(${offset}px)`;
     }
 
-    document.querySelector('.slider-btn-left').addEventListener('click', function () {
+    leftArrow.addEventListener('click', function () {
         goToSlide(currentIndex - 1);
     });
 
-    document.querySelector('.slider-btn-right').addEventListener('click', function () {
+    rightArrow.addEventListener('click', function () {
         goToSlide(currentIndex + 1);
-    });*/
+    });
+   /* setInterval(function() {
+        goToSlide(currentIndex + 1);
+    }, 4000);*/
 
 
     let arrowButton = document.getElementById('footerArrowTop')
@@ -58,7 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', VisibleArrow)
 
     const popup = document.getElementById('popupOrderContent');
-    /*const button1 = document.getElementById('order_now_button1');*/
     const button2 = document.getElementById('order_now_button2');
     const closePopup1 = document.getElementById('closePopupButton1')
     const closePopup2 = document.getElementById('closePopupButton2')
@@ -75,9 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener('click', function (event) {
         const isClickInsidePopup = popup.contains(event.target);
         const isClickOnButton2 = event.target === button2;
-      /*  const isClickOnButton1 = event.target === button1;*/
 
-        if (!isClickInsidePopup /*&& !isClickOnButton1*/ && !isClickOnButton2) {
+        if (!isClickInsidePopup && !isClickOnButton2) {
             popup.style.display = 'none';
         }
     });
@@ -89,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-    /*button1.addEventListener('click', handleClick);*/
     button2.addEventListener('click', handleClick);
     closePopup1.addEventListener('click', closePopup);
     closePopup2.addEventListener('click', closePopup);
