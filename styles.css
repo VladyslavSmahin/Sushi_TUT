@@ -3,8 +3,9 @@
     padding: 0;
 }
 
-a, p {
+a, p, li {
     text-decoration: none;
+    list-style: none;
 }
 
 html {
@@ -161,10 +162,12 @@ body {
     position: relative;
     z-index: 4;
 }
-.text_orange{
+
+.text_orange {
     color: #FF8A00;
 }
-.slide1_text{
+
+.slide1_text {
     top: -600px;
     left: 57px;
 }
@@ -189,6 +192,7 @@ body {
 .slide1_text_span {
     font-family: Montserrat-Medium, sans-serif;
 }
+
 .slide2_text {
     font-size: 40px;
     top: -574px;
@@ -196,9 +200,11 @@ body {
     line-height: 59px;
     text-align: end;
 }
-.slide2_text p:nth-child(1){
+
+.slide2_text p:nth-child(1) {
     margin-bottom: 58px;
 }
+
 .section1_text_Line {
     max-width: 100px;
     margin-bottom: 52px;
@@ -264,42 +270,59 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1264px;
+    position: relative;
 }
-
-.section2_cart {
-    margin-bottom: 8px;
+.section2_menu_carts_arrow{
     display: flex;
+    align-items: center;
+    height: 95%;
+    position: absolute;
+    z-index: 2;
+    border: none;
+    right: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(to right,rgba(134, 130, 113, 0.5), rgba(0, 0, 0, 0.5) );
+}
+.section2_cart {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-decoration: none;
     color: black;
     box-sizing: border-box;
-    max-width: 617px;
+    max-width: 311px;
     width: 100%;
     position: relative;
-}
-
-.section2_cart::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -8px;
-    width: 16px;
-    border-radius: 3px;
-    background-color: #FF8A00;
-    z-index: -1;
 }
 
 .section2_cart_caption {
     background-color: white;
     width: 100%;
-    height: 100%;
+    height: 72px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
+.section2_cart_img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.section2_cart::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: -8px;
+    border-radius: 10px;
+    height: 16px;
+    background-color: #FF8A00;
+    z-index: -1;
+}
+
 
 .bg_orange {
     width: 1096px;
@@ -528,21 +551,24 @@ body {
     top: -9px;
     left: -606px;
 }
-
-.footerBox1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 44px 0;
+.footerBoxWrapper{
     border-bottom: 2px solid #333333;
     border-top: 2px solid #333333;
     width: 100%;
+}
+.footerBox{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.footerBox1 {
+    display: flex;
+    align-items: center;
 }
 
 .footerLogo {
     max-width: 256px;
     margin-bottom: 32px;
-
 }
 
 .footerArrowTop {
@@ -564,27 +590,29 @@ body {
 .footerArrowTopButton:hover {
     opacity: 100%;
 }
-
-.footerNav {
+.footerNavUl > *{
     font-family: "Montserrat-Regular", sans-serif;
-    display: flex;
-    justify-content: space-between;
-    width: 554px;
+    margin-bottom: 20px;
 }
-
+.footerNavUl li:nth-child(1){
+    font-size: 18px;
+}
 .footerBox2 {
     display: flex;
-    justify-content: center;
-    padding: 32px 0;
-    border-bottom: 2px solid #333333;
-    width: 100%;
+    flex-direction: column;
     font-family: "Montserrat-Regular", sans-serif;
-    margin-left: 34px;
 }
-
+.footerBox2Header,
+.footerBox3Header{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.socials_icon{
+    margin-right: 20px;
+}
 .footerBox2Cart1,
 .footerBox2Cart2 {
-    margin-right: 52px;
+    margin-bottom: 20px;
 }
 
 .footerBox2CartText1 {
@@ -607,7 +635,6 @@ body {
 
 .footerBox2Cart2 {
     position: relative;
-    margin-right: 86px;
 }
 
 .footerBox2Cart2::before {
@@ -620,8 +647,10 @@ body {
 .footerBox2Cart3 {
     position: relative;
 }
-
-.footerBox3 {
+.footerBox3{
+    width: 290px;
+}
+.footerBox4 {
     padding: 32px 0;
 }
 
@@ -636,6 +665,9 @@ body {
     position: relative;
     bottom: 0;
     z-index: -1;
+}
+.socials_icons{
+    display: flex;
 }
 
 .popupOrder {
