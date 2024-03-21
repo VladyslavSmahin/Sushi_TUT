@@ -8,6 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const rightArrow = document.querySelector('.slider-btn-right')
 
     function goToSlide(index) {
+        currentIndex = index;
+        let currentSlide = slides[currentIndex]
+        const offset = -((currentIndex * slideWidth));
+        console.log(currentSlide)
+
         if (index < 0) {
             index = totalSlides - 1;
         } else if (index >= totalSlides) {
@@ -16,24 +21,26 @@ document.addEventListener("DOMContentLoaded", function () {
         if (index === 6) {
             rightArrow.style.display = "none"
         } else{
-            rightArrow.style.display = "inline"
+            rightArrow.style.display = "flex"
         }
         if (index === 0) {
             leftArrow.style.display = "none"
         } else{
-            leftArrow.style.display = "inline"
+            leftArrow.style.display = "flex"
         }
-        currentIndex = index;
-        const offset = -((currentIndex * slideWidth));
         slider.style.transform = `translateX(${offset}px)`;
+
     }
 
     leftArrow.addEventListener('click', function () {
         goToSlide(currentIndex - 1);
+        console.log(currentIndex)
+
     });
 
     rightArrow.addEventListener('click', function () {
         goToSlide(currentIndex + 1);
+        console.log(currentIndex)
     });
    /* setInterval(function() {
         goToSlide(currentIndex + 1);
