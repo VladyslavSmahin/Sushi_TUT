@@ -137,7 +137,7 @@ body {
 
 .slider-btn {
     position: absolute;
-    top: 25%;
+    top: 20%;
     transform: translateY(-50%);
     cursor: pointer;
     height: 600px;

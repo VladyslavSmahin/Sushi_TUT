@@ -467,6 +467,35 @@
 }
 
 @media screen and (max-width: 480px) {
+    .slider {
+        max-width: 440px;
+    }
+    .slider-btn {
+        top: 23%;
+        height: 460px;
+    }
+    .slider-container {
+        width: 440px;
+        left: 46%;
+        margin-left: 26px;
+    }
+    .slideImg{
+        width: 440px;
+        height: 470px;
+    }
+    .slide1_text {
+        top: -511px;
+        left: 0px;
+    }
+    .slide1_text p {
+        max-width: 300px;
+    }
+    .section1_text_Line{
+        padding-bottom: 120px;
+    }
+    .section2 {
+        padding-top: 257px;
+    }
     .adaptiveHeaderContent {
         flex-wrap: wrap;
     }
