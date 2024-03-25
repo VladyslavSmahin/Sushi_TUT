@@ -682,7 +682,9 @@
         align-items: center;
         padding-bottom: 60px;
     }
-
+    .section2_cart {
+        max-width: 200px;
+    }
     .slide1_text {
         display: flex;
         flex-direction: column;
@@ -868,7 +870,7 @@
 
     .slider-container {
         width: 400px;
-        left: 46%;
+        left: 44%;
         margin-left: 26px;
     }
 
@@ -878,15 +880,39 @@
     .slide1_text p {
         width: 328px;
     }
-
+    .slide2_text {
+        top: -423px;
+    }
+    .slide2_text .text_orange {
+        padding-bottom: 151px;
+    }
+    .slide3_text {
+        top: -418px;
+    }
+    .slide3_text .sliderLogo {
+        margin-top: 20px;
+    }
+    .slide5_text {
+        max-width: 350px;
+        align-items: center;
+        top: -419px;
+        right: -27px;
+    }
+    .slide5_text .sliderLogo {
+        margin-top: 35px;
+    }
     .footerArrowTopButton {
         opacity: 100%;
     }
-
+    .section2_cart {
+        max-width: 156px;
+    }
+    .section2_cart_caption {
+        font-size: 16px;
+    }
     .section4 {
         padding-bottom: 60px;
     }
-
     .section4_text {
         font-size: 24px;
     }
@@ -915,5 +941,64 @@
     .section5 .order_now_button {
         width: 296px;
         margin-left: -17px;
+    }
+    .section6Content a p:nth-child(1) {
+        font-size: 25px;
+    }
+    .section6InstaPhotos img {
+        max-width: 150px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .adaptiveHeaderLogo {
+        padding-left: 24%;
+    }
+    .slider {
+        max-width: 320px;
+    }
+
+    .slider-btn {
+        top: 20%;
+        height: 305px;
+    }
+
+    .slider-container {
+        width: 320px;
+        left: 44%;
+        margin-left: 26px;
+    }
+
+    .slideImg {
+        width: 320px;
+    }
+    .slide1_text {
+        top: -391px;
+    }
+    .section1_text_Line {
+        padding-bottom: 0;
+    }
+    .slide2_text {
+        font-size: 25px;
+        top: -350px;
+        line-height: 40px;
+    }
+    .slide4_text {
+        top: -406px;
+    }
+    .slide4_text .sliderLogo {
+        margin-top: 161px;
+    }
+    .slide5_text {
+        top: -467px;
+        right: 2px;
+    }
+    .slide6_text {
+        top: -302px;
+    }
+    .slide6_text p:nth-child(2) {
+        padding-bottom: 99px;
+    }
+    .slide7_text p:nth-child(7) {
+        margin-left: 48px;
     }
 }
