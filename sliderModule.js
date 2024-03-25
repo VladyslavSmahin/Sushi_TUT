@@ -1,4 +1,3 @@
-
 export function initializeSlider() {
     document.addEventListener("DOMContentLoaded", function () {
         const slider = document.querySelector('.slider');
@@ -39,7 +38,9 @@ export function initializeSlider() {
         rightArrow.addEventListener('click', function () {
             goToSlide(currentIndex + 1);
         });
-
+        setInterval(function () {
+            goToSlide(currentIndex + 1);
+        }, 4000);
         const slide1 = document.getElementById('slideImg1');
         const slide2 = document.getElementById('slideImg2');
         const slide3 = document.getElementById('slideImg3');
