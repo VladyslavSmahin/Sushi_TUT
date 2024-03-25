@@ -750,6 +750,9 @@
         flex-direction: column;
         align-items: center;
     }
+    .footerLogo {
+        max-width: 200px;
+    }
     .footerBox1 {
         padding-bottom: 0;
     }
@@ -758,20 +761,34 @@
         flex-direction: column;
         align-items: center;
         font-size: 16px;
+        margin-left: 0;
+        line-height: 40px;
+        position: relative;
+    }
+
+    .footerNav::after{
+        content: '';
+        position: absolute;
+        left: -207px;
+        bottom: 22px;
+        width: 500px;
+        height: 2px;
+        background-color: #333333;
     }
 
     .footerNav > * {
         margin-bottom: 40px;
+        text-align: center;
     }
 
     .footerBox2 {
         flex-direction: column;
         align-items: center;
+        margin-left: 0;
     }
-
     .footerBox2 > * {
         margin-bottom: 24px;
-
+        text-align: center;
     }
 
     .footerBox2Cart {
@@ -780,7 +797,7 @@
     }
 
     .footerBox2Cart1 {
-        margin-right: 29px;
+        margin-right: 0;
     }
 
     .footerBox2Cart1::before {
@@ -789,7 +806,7 @@
     }
 
     .footerBox2Cart2 {
-        margin-right: 39px;
+        margin-right: 0;
     }
 
     .footerBox2Cart2::before {
@@ -803,9 +820,14 @@
     }
 
     .footerBox2Cart3 {
-        margin-left: -31px;
+        margin-left: 0;
     }
-
+    .footerBox3{
+        text-align: center;
+    }
+    .socials_icons {
+        margin-left: 20px;
+    }
 }
 @media screen and (max-width: 460px) {
     .slider {
