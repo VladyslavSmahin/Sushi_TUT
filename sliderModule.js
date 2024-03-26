@@ -5,12 +5,12 @@ export function initializeSlider() {
         const totalSlides = slides.length;
         const slideWidth = slides[0].clientWidth;
         let currentIndex = 0;
-        //let currentSlide = slides[currentIndex]
         const leftArrow = document.querySelector('.slider-btn-left')
         const rightArrow = document.querySelector('.slider-btn-right')
 
         function goToSlide(index) {
             currentIndex = index;
+            let currentSlide = slides[currentIndex]
             const offset = -((currentIndex * slideWidth));
 
             if (index < 0) {
@@ -33,10 +33,12 @@ export function initializeSlider() {
 
         leftArrow.addEventListener('click', function () {
             goToSlide(currentIndex - 1);
+            console.log(slideWidth)
         });
 
         rightArrow.addEventListener('click', function () {
             goToSlide(currentIndex + 1);
+            console.log(slideWidth)
         });
         /*setInterval(function () {
             if (currentIndex <= 5){

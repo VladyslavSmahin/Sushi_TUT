@@ -165,11 +165,15 @@
     .container {
         max-width: 900px;
     }
-
+    .section1 {
+        margin-bottom: 41px;
+    }
     .slider {
         max-width: 720px;
     }
-
+    .slide {
+        max-height: 500px;
+    }
     .slider-container {
         width: 720px;
         left: 46%;
@@ -195,7 +199,7 @@
     }
 
     .slider-btn {
-        top: 21%;
+        top: 43%;
         height: 415px;
     }
 
@@ -244,7 +248,7 @@
     }
 
     .section2 {
-        padding-top: 114px;
+        padding-top: 5px;
     }
 
     .section2_cart {
@@ -292,7 +296,9 @@
     .slider {
         max-width: 650px;
     }
-
+    .slide {
+        max-height: 350px;
+    }
     .slider-container {
         width: 650px;
         left: 46%;
@@ -307,7 +313,7 @@
     }
 
     .slider-btn {
-        top: 18%;
+        top: 45%;
         height: 311px;
     }
     .slide2_text .text_orange {
@@ -517,17 +523,20 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
     .slider {
         max-width: 440px;
+    }
+    .slide{
+        max-height: 500px;
     }
     .sliderArrowLeft,
     .sliderArrowRight {
         height: 28px;
     }
     .slider-btn {
-        top: 23%;
-        height: 460px;
+        top: 50%;
+        height: 350px;
     }
 
     .slider-container {
@@ -536,25 +545,15 @@
         margin-left: 26px;
     }
 
-    .slideImg {
-        width: 440px;
-    }
-
     .slide1_text {
         top: -511px;
         left: 0;
     }
-
+    .section1_text_Line {
+        margin-bottom: 205px;
+    }
     .slide1_text p {
         max-width: 300px;
-    }
-
-    .section1_text_Line {
-        padding-bottom: 120px;
-    }
-
-    .section2 {
-        padding-top: 257px;
     }
     .slide2_text {
         top: -453px;
@@ -702,7 +701,6 @@
     .section1 {
         flex-direction: column;
         align-items: center;
-        padding-bottom: 60px;
     }
     .section2_cart {
         max-width: 200px;
@@ -881,8 +879,8 @@
     }
 
     .slider-btn {
-        top: 23%;
-        height: 460px;
+        top: 44%;
+        height: 350px;
     }
 
     .slider-container {
@@ -998,7 +996,7 @@
     }
 
     .slider-btn {
-        top: 20%;
+        top: 39%;
         height: 305px;
     }
 
@@ -1015,7 +1013,7 @@
         top: -391px;
     }
     .section1_text_Line {
-        padding-bottom: 0;
+        margin-bottom: 94px;
     }
     .slide2_text {
         top: -357px;
@@ -1023,7 +1021,7 @@
         line-height: 40px;
     }
     .slide2_text .text_orange {
-        padding-bottom: 161px;
+        padding-bottom: 150px;
     }
     .slide3_text {
         top: -350px;
