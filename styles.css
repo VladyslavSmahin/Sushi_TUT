@@ -485,7 +485,7 @@ body {
 
 .section4Line {
     margin-top: 20px;
-    margin-bottom: 48px;
+    margin-bottom: 10px;
 }
 
 .section4_text {
@@ -552,7 +552,7 @@ body {
 
 .map {
     max-width: 457px;
-
+    border-radius: 20px;
 }
 
 .section5 {
@@ -567,6 +567,8 @@ body {
     max-height: 390px;
     padding: 32px 76px 32px 46px;
     position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .section5Delivery::after {
@@ -680,7 +682,7 @@ body {
 
 .section6InstaPhotos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .section6InstaPhotos img {
@@ -714,7 +716,7 @@ body {
 
 .footerBox1 {
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 
 .footerLogo {
@@ -807,6 +809,10 @@ body {
 
 .footerBox3 {
     width: 290px;
+
+}
+.footerBox3Header{
+    font-family: "Montserrat-Regular", sans-serif;
 }
 
 .footerBox4 {
