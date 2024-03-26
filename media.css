@@ -47,7 +47,7 @@
         align-items: center;
         padding: 30px 0;
         width: 100%;
-        background-color: rgb(0, 0, 0, 0.7);
+        background-color: rgb(0, 0, 0, 0.8);
         z-index: 4;
     }
 
@@ -1031,7 +1031,25 @@
         line-height: 35px;
     }
     .slide3_text .sliderLogo {
-        margin-top: 48px;
+        margin-top: 31px;
         margin-bottom: 3px;
+    }
+    .slide4_text {
+        top: -360px;
+        font-size: 20px;
+    }
+    .slide4_text p:nth-child(1), .slide4_text p:nth-child(2) {
+        font-size: 20px;
+    }
+    .slide4_text .sliderLogo {
+        margin-top: 185px;
+    }
+    .slide5_text {
+        top: -371px;
+        right: 0;
+        font-size: 18px;
+    }
+    .slide7_text p:nth-child(7) {
+        margin-left: 0;
     }
 }
