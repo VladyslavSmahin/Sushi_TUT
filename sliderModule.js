@@ -5,12 +5,12 @@ export function initializeSlider() {
         const totalSlides = slides.length;
         const slideWidth = slides[0].clientWidth;
         let currentIndex = 0;
+        //let currentSlide = slides[currentIndex]
         const leftArrow = document.querySelector('.slider-btn-left')
         const rightArrow = document.querySelector('.slider-btn-right')
 
         function goToSlide(index) {
             currentIndex = index;
-            let currentSlide = slides[currentIndex]
             const offset = -((currentIndex * slideWidth));
 
             if (index < 0) {
@@ -38,9 +38,16 @@ export function initializeSlider() {
         rightArrow.addEventListener('click', function () {
             goToSlide(currentIndex + 1);
         });
-        setInterval(function () {
-            goToSlide(currentIndex + 1);
-        }, 4000);
+        /*setInterval(function () {
+            if (currentIndex <= 5){
+                goToSlide(currentIndex + 1);
+                console.log(currentIndex)
+            } else {
+                goToSlide(currentIndex = 0);
+                console.log(currentIndex)
+            }
+        }, 4000);*/
+
         const slide1 = document.getElementById('slideImg1');
         const slide2 = document.getElementById('slideImg2');
         const slide3 = document.getElementById('slideImg3');

@@ -59,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
     buttonForm.addEventListener('click', SendData)
 
 
-    // Получаем элементы
     const menuIcon = document.querySelector('.adaptiveHeaderMenu-icon');
     const nav = document.querySelector('.adaptiveHeaderUl');
 
