@@ -833,11 +833,11 @@ html {
 .footerBox4::before{
     content: '';
     height: 2px;
-    width: 1440px;
+    width: 2000px;
     background-color:  #333333;
     position: absolute;
     top: 0;
-    left: -60px;
+    left: -100px;
 }
 .footer a {
     color: white;

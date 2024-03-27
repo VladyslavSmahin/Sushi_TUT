@@ -149,10 +149,6 @@
         margin-bottom: 140px;
     }
 
-    .footerBox4::before {
-        left: -50px;
-    }
-
     .slider-btn {
         height: 550px;
     }
@@ -425,7 +421,7 @@
     }
 
     .instruction_text2 {
-        line-height: 20px;
+        line-height: 25px;
     }
 
     .section6Content {
@@ -852,11 +848,13 @@
     }
 
     .instruction_text2 {
-        font-size: 20px;
+        font-size: 15px;
         max-width: 316px;
         padding: 0 62px;
     }
-
+    .instruction_text2 {
+        line-height: 25px;
+    }
     .section5Content {
         flex-direction: column;
     }
