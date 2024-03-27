@@ -735,7 +735,7 @@ html {
     border: none;
     background: transparent;
     position: fixed;
-    bottom: 160px;
+    bottom: 100px;
     right: 15px;
     transform: rotate(270deg);
     z-index: 4;

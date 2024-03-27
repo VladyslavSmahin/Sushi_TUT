@@ -93,6 +93,7 @@
         height: 4px;
         background-color: white;
         margin: 6px 0;
+        border-radius: 3px;
     }
 
     .closeIcon {
@@ -774,6 +775,7 @@
         width: 328px;
         margin-left: 22px;
     }
+
     .footerBox {
         flex-direction: column;
         align-items: center;
@@ -861,6 +863,9 @@
     }
     .designBy{
         display: none;
+    }
+    .footer{
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 460px) {
