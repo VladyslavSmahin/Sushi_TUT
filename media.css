@@ -747,12 +747,12 @@
         max-width: 440px;
         border-radius: 0;
     }
-
     .section5Delivery {
         margin-top: -4px;
         max-width: 440px;
         border-bottom-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 0;
     }
 
     .section5DeliveryHead {
@@ -855,6 +855,12 @@
     }
     .socials_icons {
         margin-left: 20px;
+    }
+    .footerBox4{
+        justify-content: center;
+    }
+    .designBy{
+        display: none;
     }
 }
 @media screen and (max-width: 460px) {
