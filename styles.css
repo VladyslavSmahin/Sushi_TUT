@@ -544,6 +544,7 @@ html {
 .instruction_text2 {
     max-width: 230px;
     padding: 0 20px;
+    line-height: 23px;
 }
 
 .section5Content {
@@ -836,7 +837,7 @@ html {
     background-color:  #333333;
     position: absolute;
     top: 0;
-    left: 10px;
+    left: -60px;
 }
 .footer a {
     color: white;
