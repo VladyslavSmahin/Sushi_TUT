@@ -615,7 +615,10 @@
         width: 440px;
         max-height: 500px;
     }
-
+    .adaptiveHeaderLogoImg {
+        width: 180px;
+        margin-bottom: 20px;
+    }
     .sliderArrowLeft,
     .sliderArrowRight {
         height: 28px;
@@ -1010,6 +1013,12 @@
 
     .slideImg {
         width: 420px;
+    }
+    .section5 .order_now_button {
+        padding: 15px 90px;
+    }
+    .instruction {
+        max-width: 300px;
     }
 }
 
