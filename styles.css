@@ -40,8 +40,8 @@ html {
     font-style: normal;
 }
 
-body {
-    background-image: url("images/background.png");
+#body {
+    background-image: url("imagesWEBP/Background_1440.webp");
     overflow-x: hidden
 }
 
@@ -131,9 +131,11 @@ body {
     display: flex;
     transition: transform 0.5s ease;
 }
-.slide{
+
+.slide {
     max-height: 700px;
 }
+
 .slideImg {
     max-width: 1280px;
     border-radius: 25px;
@@ -712,6 +714,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 40px 0;
+
 }
 
 .footerBox1 {
@@ -811,12 +814,32 @@ body {
     width: 290px;
 
 }
-.footerBox3Header{
+
+.footerBox3Header {
     font-family: "Montserrat-Regular", sans-serif;
 }
 
 .footerBox4 {
+    max-width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
     padding: 32px 0;
+    font-family: "Montserrat-Regular", sans-serif;
+    position: relative;
+}
+
+.footerBox4::before{
+    content: '';
+    height: 2px;
+    width: 1440px;
+    background-color:  #333333;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+.footer a {
+    color: white;
 }
 
 .footerBox2Cart3::before {

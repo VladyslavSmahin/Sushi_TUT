@@ -1,6 +1,8 @@
 import { initializeSlider } from './sliderModule.js';
+import { changeImagePathOnMedia } from './changePhotoModule.js'
 
 initializeSlider();
+changeImagePathOnMedia();
 document.addEventListener("DOMContentLoaded", function () {
 
     let arrowButton = document.getElementById('footerArrowTop')
@@ -10,13 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
         window.scrollTo(0, 0)
     }
 
-
+    let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
     function VisibleArrow() {
         if (window.scrollY < section1.offsetTop) {
             arrowButton.style.display = 'none';
         } else {
             arrowButton.style.display = 'inline';
         }
+        console.log(scrollPosition)
     }
 
     arrowButton.addEventListener('click', ArrowTopDown)

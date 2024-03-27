@@ -517,7 +517,9 @@
     .footerBox2 {
         font-size: 14px;
     }
-
+    .footerBox {
+        padding: 25px 0;
+    }
     .footerArrowTop {
         max-width: 80%;
     }
@@ -528,7 +530,8 @@
         max-width: 440px;
     }
     .slide{
-        max-height: 400px;
+        width: 440px;
+        max-height: 500px;
     }
     .sliderArrowLeft,
     .sliderArrowRight {
@@ -742,11 +745,14 @@
     }
     .map {
         max-width: 440px;
+        border-radius: 0;
     }
 
     .section5Delivery {
         margin-top: -4px;
         max-width: 440px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
 
     .section5DeliveryHead {
