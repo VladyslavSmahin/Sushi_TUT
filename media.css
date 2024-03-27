@@ -1237,3 +1237,32 @@
         margin-left: 0;
     }
 }
+@media screen and (max-width: 400px) {
+    .container{
+        max-width: 328px;
+    }
+    .slider {
+        max-width: 328px;
+    }
+    .instruction {
+        max-width: 328px;
+    }
+    .instruction_text2 {
+        line-height: 20px;
+    }
+    .slider-btn {
+        top: 39%;
+        height: 305px;
+    }
+
+    .slider-container {
+        width: 328px;
+        left: 44%;
+        margin-left: 20px;
+    }
+
+    .slideImg {
+        width: 328px;
+    }
+
+}
