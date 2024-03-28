@@ -1,8 +1,10 @@
 import { initializeSlider } from './sliderModule.js';
 import { changeImagePathOnMedia } from './changePhotoModule.js'
+import {changeColorLink} from './changeColorLink.js'
 
 initializeSlider();
 changeImagePathOnMedia();
+changeColorLink();
 document.addEventListener("DOMContentLoaded", function () {
 
     let arrowButton = document.getElementById('footerArrowTop')
