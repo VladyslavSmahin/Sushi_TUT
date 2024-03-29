@@ -41,7 +41,7 @@ export function initializeSlider() {
             goToSlide(currentIndex + 1);
             console.log(slideWidth)
         });
-        /*setInterval(function () {
+        setInterval(function () {
             if (currentIndex <= 5){
                 goToSlide(currentIndex + 1);
                 console.log(currentIndex)
@@ -49,7 +49,7 @@ export function initializeSlider() {
                 goToSlide(currentIndex = 0);
                 console.log(currentIndex)
             }
-        }, 4000);*/
+        }, 4000);
 
 
     });

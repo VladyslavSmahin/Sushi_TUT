@@ -1,5 +1,5 @@
-import { initializeSlider } from './sliderModule.js';
-import { changeImagePathOnMedia } from './changePhotoModule.js'
+import {initializeSlider} from './sliderModule.js';
+import {changeImagePathOnMedia} from './changePhotoModule.js'
 import {changeColorLink} from './changeColorLink.js'
 
 initializeSlider();
@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
     function VisibleArrow() {
         if (window.scrollY < section1.offsetTop) {
             arrowButton.style.display = 'none';
