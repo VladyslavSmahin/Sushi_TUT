@@ -81,11 +81,12 @@ a {
     border-radius: 20px;
     position: relative;
 }
-
+.backgroundWhiteImg{
+    width: 260px;
+    height: 160px;
+}
 .cartImg {
     margin-bottom: 8px;
-    width: 259px;
-    height: 154px;
 }
 
 .cartName {
@@ -119,6 +120,13 @@ a {
 .wrapperPrice {
     display: flex;
 }
+.wrapperPrice p{
+    font-weight: bold;
+    font-size: 24px;
+}
+.price{
+    margin-right: 3px;
+}
 
 .footerArrowTopButton {
     display: none;
@@ -133,4 +141,21 @@ a {
     border-radius: 50%;
     max-width: 72px;
     max-height: 72px;
+}
+#Rolls::before,
+#WarmRolls::before,
+#PremiumRolls::before,
+#Gunkans::before,
+#Udons::before,
+#SushiBurgers::before,
+#Maki::before,
+#Sets::before,
+#Inari::before,
+#Onigiri::before,
+#SushiShawarma::before{
+    content: "";
+    display: block;
+    height: 100px; /* Высота отступа, которую вы хотите добавить */
+    margin-top: -100px; /* Отрицательный margin для сдвига содержимого вверх */
+    visibility: hidden; /* Делаем псевдоэлемент невидимым */
 }
