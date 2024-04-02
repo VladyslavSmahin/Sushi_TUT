@@ -1,10 +1,12 @@
-import {initializeSlider} from './sliderModule.js';
-import {changeImagePathOnMedia} from './changePhotoModule.js'
-import {changeColorLink} from './changeColorLink.js'
+import {initializeSlider} from './js/sliderModule.js';
+import {changeImagePathOnMedia} from './js/changePhotoModule.js'
+import {changeColorLink} from './js/changeColorLink.js'
+import { sendMessageToChannel } from './js/TelegramAPIModule.js'
 
 initializeSlider();
 changeImagePathOnMedia();
 changeColorLink();
+sendMessageToChannel()
 document.addEventListener("DOMContentLoaded", function () {
 
     let arrowButton = document.getElementById('footerArrowTop')
@@ -22,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             arrowButton.style.display = 'inline';
         }
-        console.log(scrollPosition)
     }
 
     arrowButton.addEventListener('click', ArrowTopDown)

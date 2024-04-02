@@ -33,21 +33,16 @@ export function initializeSlider() {
 
         leftArrow.addEventListener('click', function () {
             goToSlide(currentIndex - 1);
-            console.log(slideWidth)
-            console.log(slides)
         });
 
         rightArrow.addEventListener('click', function () {
             goToSlide(currentIndex + 1);
-            console.log(slideWidth)
         });
         setInterval(function () {
             if (currentIndex <= 5){
                 goToSlide(currentIndex + 1);
-                console.log(currentIndex)
             } else {
                 goToSlide(currentIndex = 0);
-                console.log(currentIndex)
             }
         }, 4000);
 
