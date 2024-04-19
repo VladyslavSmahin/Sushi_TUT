@@ -1,0 +1,14 @@
+@media screen and (max-width: 1281px) {
+    .slider-container2 {
+        overflow-x: scroll;
+        scrollbar-width: none; /* Убираем скроллбар */
+        -ms-overflow-style: none; /* IE и Edge */
+    }
+
+    .slider-container2::-webkit-scrollbar {
+        display: none; /* Скрываем скроллбар в WebKit браузерах (Chrome, Safari, etc.) */
+    }
+    .setsCart {
+        max-width: 294px;
+    }
+}

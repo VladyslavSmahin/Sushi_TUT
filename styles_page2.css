@@ -155,7 +155,7 @@ a {
 #SushiShawarma::before{
     content: "";
     display: block;
-    height: 100px; /* Высота отступа, которую вы хотите добавить */
-    margin-top: -100px; /* Отрицательный margin для сдвига содержимого вверх */
-    visibility: hidden; /* Делаем псевдоэлемент невидимым */
+    height: 100px;
+    margin-top: -100px;
+    visibility: hidden;
 }

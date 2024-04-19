@@ -2,11 +2,15 @@ import {initializeSlider} from './js/sliderModule.js';
 import {changeImagePathOnMedia} from './js/changePhotoModule.js'
 import {changeColorLink} from './js/changeColorLink.js'
 import { sendMessageToChannel } from './js/TelegramAPIModule.js'
+import { Swiper } from './js/swiperModule.js'
+import { Popup } from './js/popupModule.js'
 
 initializeSlider();
 changeImagePathOnMedia();
 changeColorLink();
 sendMessageToChannel()
+Swiper()
+Popup()
 document.addEventListener("DOMContentLoaded", function () {
 
     let arrowButton = document.getElementById('footerArrowTop')
@@ -30,43 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
     VisibleArrow()
     window.addEventListener('scroll', VisibleArrow)
 
-    const popup = document.getElementById('popupOrderContent');
-    const button2 = document.getElementById('order_now_button2');
-    const closePopup1 = document.getElementById('closePopupButton1')
-    const closePopup2 = document.getElementById('closePopupButton2')
-    const buttonForm = document.getElementById('popupOrderFormButton')
-
-    function handleClick() {
-        popup.style.display = 'flex';
-    }
-
-    function closePopup() {
-        popup.style.display = 'none';
-    }
-
-    document.addEventListener('click', function (event) {
-        const isClickInsidePopup = popup.contains(event.target);
-        const isClickOnButton2 = event.target === button2;
-
-        if (!isClickInsidePopup && !isClickOnButton2) {
-            popup.style.display = 'none';
-        }
-    });
 
 
-    function SendData(event) {
-        event.preventDefault()
-        console.log(event)
-
-    }
-
-    button2.addEventListener('click', handleClick);
-    closePopup1.addEventListener('click', closePopup);
-    closePopup2.addEventListener('click', closePopup);
-    buttonForm.addEventListener('click', SendData)
-
-
-    // Получаем элементы
     const menuIcon = document.querySelector('.adaptiveHeaderMenu-icon');
     const nav = document.querySelector('.adaptiveHeaderUl');
 
