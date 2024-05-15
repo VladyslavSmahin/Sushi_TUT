@@ -3,7 +3,6 @@
      export function sendMessageToChannel() {
 
          function Message(event){
-             event.preventDefault();
              const botToken = '6951668973:AAHY51kSua4w8Gzjtplsb-Ve1AxiyPSWDeY';
              const chatId = '-1002053040527';
              let input1, input2, input3, input1_1, input2_1, input3_1;
@@ -44,7 +43,6 @@
                  .then(response => response.json())
                  .then(data => console.log(data))
                  .catch(error => console.error('Ошибка:', error));
-             console.log(message, input1)
          }
          const popupOrderFormButton = document.getElementById('popupOrderFormButton');
          if (popupOrderFormButton) {
