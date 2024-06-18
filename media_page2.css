@@ -1,14 +1,115 @@
 @media screen and (max-width: 1281px) {
     .slider-container2 {
         overflow-x: scroll;
-        scrollbar-width: none; /* Убираем скроллбар */
-        -ms-overflow-style: none; /* IE и Edge */
+        scrollbar-width: none;
+        -ms-overflow-style: none;
     }
 
     .slider-container2::-webkit-scrollbar {
-        display: none; /* Скрываем скроллбар в WebKit браузерах (Chrome, Safari, etc.) */
+        display: none;
     }
+
+    .sets {
+        margin: 0 auto;
+    }
+
     .setsCart {
-        max-width: 294px;
+        max-width: 284px;
+    }
+
+    .container {
+        max-width: 1170px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .setsCarts {
+        max-width: 750px;
+    }
+
+    .setsCart {
+        max-height: 320px;
+        max-width: 232px;
+    }
+
+    .setsCartWrapper {
+        width: calc(33.33% - 10px); /* Три колонки на экранах до 1200px */
+    }
+
+    .container {
+        max-width: 1170px;
+    }
+
+    .cartName {
+        font-size: 16px;
+    }
+
+    .cartDescription {
+        font-size: 12px;
+    }
+
+    .weight {
+        font-size: 14px;
+    }
+
+    .wrapperPrice p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .setsCarts {
+        max-width: 440px;
+    }
+
+    .setsCart {
+        max-width: 216px;
+    }
+
+    .setsCartWrapper {
+        width: calc(50% - 10px);
+    }
+
+    .cartName {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 451px) {
+    .setsCarts {
+        max-width: 400px;
+    }
+
+    .setsCart {
+        max-width: 190px;
+    }
+
+    .setsCartWrapper {
+        width: calc(50% - 10px);
+    }
+
+    .cartName {
+        font-size: 14px;
+    }
+
+    .cartDescription {
+        font-size: 11px;
+    }
+
+    .weight {
+        font-size: 12px;
+    }
+
+    .wrapperPrice p {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 410px) {
+    .setsCarts {
+        max-width: 390px;
+    }
+
+    .setsCart {
+        max-width: 180px;
     }
 }
