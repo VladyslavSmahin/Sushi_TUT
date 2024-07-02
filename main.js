@@ -2,14 +2,12 @@ import {initializeSlider} from './js/sliderModule.js';
 import {changeImagePathOnMedia} from './js/changePhotoModule.js'
 import {changeColorLink} from './js/changeColorLink.js'
 import { sendMessageToChannel } from './js/TelegramAPIModule.js'
-import { Swiper } from './js/swiperModule.js'
 import { Popup } from './js/popupModule.js'
 
 initializeSlider();
 changeImagePathOnMedia();
 changeColorLink();
 sendMessageToChannel()
-Swiper()
 Popup()
 document.addEventListener("DOMContentLoaded", function () {
 

@@ -1,12 +1,8 @@
 @media screen and (max-width: 1281px) {
-    .slider-container2 {
+    .section2Nav {
         overflow-x: scroll;
-        scrollbar-width: none;
+        scrollbar-width: thin;
         -ms-overflow-style: none;
-    }
-
-    .slider-container2::-webkit-scrollbar {
-        display: none;
     }
 
     .sets {

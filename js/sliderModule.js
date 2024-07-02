@@ -30,6 +30,34 @@ export function initializeSlider() {
             }
             slider.style.transform = `translateX(${offset}px)`;
         }
+        let startX = null;
+
+        function handleStart(x) {
+            startX = x;
+        }
+
+        function handleMove(x) {
+            if (startX === null) return;
+
+            const deltaX = startX - x;
+            startX = null;
+
+            if (deltaX < 0) {
+                console.log('else');
+                goToSlide(currentIndex - 1);
+            } else {
+                console.log('if');
+                goToSlide(currentIndex + 1);
+            }
+            console.log(deltaX);
+        }
+
+        document.addEventListener('touchstart', e => handleStart(e.touches[0].clientX));
+        document.addEventListener('touchmove', e => handleMove(e.touches[0].clientX));
+
+        document.addEventListener('mousedown', e => handleStart(e.clientX));
+        document.addEventListener('mousemove', e => handleMove(e.clientX));
+        document.addEventListener('mouseup', () => startX = null);
 
         leftArrow.addEventListener('click', function () {
             goToSlide(currentIndex - 1);
