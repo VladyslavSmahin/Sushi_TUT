@@ -29,7 +29,7 @@
     }
 
     .setsCartWrapper {
-        width: calc(33.33% - 10px); /* Три колонки на экранах до 1200px */
+        width: calc(33.33% - 10px);
     }
 
     .container {

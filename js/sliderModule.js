@@ -1,6 +1,7 @@
 export function initializeSlider() {
     document.addEventListener("DOMContentLoaded", function () {
         const slider = document.querySelector('.slider');
+        const sliderContainer =  document.querySelector('.slider-container');
         const slides = document.querySelectorAll('.slide');
         const totalSlides = slides.length;
         const slideWidth = slides[0].clientWidth;
@@ -52,12 +53,12 @@ export function initializeSlider() {
             console.log(deltaX);
         }
 
-        document.addEventListener('touchstart', e => handleStart(e.touches[0].clientX));
-        document.addEventListener('touchmove', e => handleMove(e.touches[0].clientX));
+        sliderContainer.addEventListener('touchstart', e => handleStart(e.touches[0].clientX));
+        sliderContainer.addEventListener('touchmove', e => handleMove(e.touches[0].clientX));
 
-        document.addEventListener('mousedown', e => handleStart(e.clientX));
-        document.addEventListener('mousemove', e => handleMove(e.clientX));
-        document.addEventListener('mouseup', () => startX = null);
+        sliderContainer.addEventListener('mousedown', e => handleStart(e.clientX));
+        sliderContainer.addEventListener('mousemove', e => handleMove(e.clientX));
+        sliderContainer.addEventListener('mouseup', () => startX = null);
 
         leftArrow.addEventListener('click', function () {
             goToSlide(currentIndex - 1);
