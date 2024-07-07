@@ -411,11 +411,11 @@
     }
 
     .section2_menu_carts_arrow {
+        display: none;
         height: 720px;
         width: 48px;
         bottom: -343px;
         left: 336px;
-        display: flex;
         justify-content: center;
         transform: rotate(90deg);
     }

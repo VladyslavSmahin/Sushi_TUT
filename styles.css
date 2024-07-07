@@ -420,7 +420,7 @@ html {
 }
 
 .section2_menu_carts_arrow {
-    display: flex;
+    display: none;
     align-items: center;
     height: 95%;
     position: absolute;

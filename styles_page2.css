@@ -32,7 +32,7 @@ a {
 
 .section2Nav ul {
     display: flex;
-    font-size: 16px;
+    font-size: 12px;
     margin: 22px 0;
     justify-content: center;
 }
