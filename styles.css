@@ -8,6 +8,7 @@ a, p, li {
     list-style: none;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -57,11 +58,10 @@ html {
     color: white;
     padding: 32px 0;
     font-family: 'Montserrat-Medium', serif;
-
 }
 
 .logo {
-    margin-left: 70px;
+    /*margin-left: 70px;*/
 }
 
 .adaptiveHeader {
@@ -86,6 +86,10 @@ html {
     z-index: -1;
 }
 
+.header {
+    max-width: 1320px;
+    margin: 0 auto;
+}
 .header .navUl a,
 .footerNav a {
     font-family: 'Montserrat-Regular', sans-serif;
@@ -693,6 +697,10 @@ html {
     max-width: 290px;
 }
 
+.footer2 {
+    max-width: 1320px;
+    margin: 0 auto;
+}
 .footerContent {
     display: flex;
     flex-direction: column;
@@ -832,7 +840,7 @@ html {
 }
 
 .footerBox4::before{
-    content: '';
+    /*content: '';*/
     height: 2px;
     width: 2000px;
     background-color:  #333333;

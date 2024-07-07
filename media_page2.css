@@ -10,7 +10,7 @@
     }
 
     .setsCart {
-        width: 284px;
+        /*width: 284px;*/
     }
 
     .container {
@@ -20,16 +20,16 @@
 
 @media screen and (max-width: 769px) {
     .setsCarts {
-        max-width: 750px;
+        /*max-width: 750px;*/
     }
 
     .setsCart {
-        max-height: 320px;
-        max-width: 232px;
+        /*max-height: 320px;*/
+        /*max-width: 232px;*/
     }
 
     .setsCartWrapper {
-        width: calc(33.33% - 10px);
+        /*width: calc(33.33% - 10px);*/
     }
 
     .container {
@@ -63,7 +63,7 @@
     }
 
     .setsCartWrapper {
-        width: calc(50% - 10px);
+        /*width: calc(50% - 10px);*/
     }
 
     .cartName {
@@ -81,7 +81,7 @@
     }
 
     .setsCartWrapper {
-        width: calc(50% - 10px);
+        /*width: calc(50% - 10px);*/
     }
 
     .cartName {
