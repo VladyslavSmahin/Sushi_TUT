@@ -630,6 +630,7 @@
         width: 439px;
         left: 46%;
         margin-left: 26px;
+        padding-bottom: 120px;
     }
 
     .slide1_text {
@@ -1162,6 +1163,10 @@
     .section6InstaPhotos img {
         max-width: 150px;
     }
+    .order_now_button{
+        bottom: 20px;
+        right: 20px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -1183,6 +1188,7 @@
         width: 350px;
         left: 44%;
         margin-left: 26px;
+        padding-bottom: 20px;
     }
 
     .slideImg {
@@ -1270,7 +1276,6 @@
     .slider-container {
         width: 328px;
         left: 44%;
-        margin-left: 20px;
     }
 
     .slideImg {

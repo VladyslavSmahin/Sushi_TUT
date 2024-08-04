@@ -1,6 +1,7 @@
 body {
     height: 2000px; /* Для демонстрации прокрутки */
 }
+
 a {
     color: white;
 }
@@ -19,14 +20,17 @@ a {
     flex-direction: column;
     align-items: center;
 }
-.slider-container2{
+
+.slider-container2 {
     position: sticky;
+    max-width: 100%;
     top: 10px;
     z-index: 10;
     width: fit-content;
 }
+
 .containerWrap {
-    background-color: rgb(0,0,0, 0.5);
+    background-color: rgb(0, 0, 0, 0.5);
     border-radius: 20px;
     border: 1px solid white;
     padding: 20px;
@@ -34,6 +38,7 @@ a {
     display: flex;
     overflow: auto;
 }
+
 .containerWrap li {
     font-size: 12px;
     white-space: nowrap;
@@ -56,13 +61,15 @@ a {
 .section2Nav li {
     margin-right: 40px;
 }
-.section2Nav li:last-child{
+
+.section2Nav li:last-child {
     margin-right: 0;
 }
 
 .setsWrap {
     width: 100%;
 }
+
 .headerSets {
     font-size: 28px;
 
@@ -88,6 +95,7 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
     justify-content: center;
 }
+
 .setsCartWrapper {
     display: flex;
     flex-direction: column;
@@ -115,10 +123,12 @@ a {
     /*border-radius: 20px;*/
     position: relative;
 }
-.backgroundWhiteImg{
+
+.backgroundWhiteImg {
     width: 260px;
     height: 160px;
 }
+
 .cartImg {
     margin-bottom: 8px;
     width: 100%;
@@ -162,11 +172,13 @@ a {
 .wrapperPrice {
     display: flex;
 }
-.wrapperPrice p{
+
+.wrapperPrice p {
     font-weight: bold;
     font-size: 24px;
 }
-.price{
+
+.price {
     margin-right: 3px;
 }
 
@@ -184,6 +196,7 @@ a {
     max-width: 72px;
     max-height: 72px;
 }
+
 #Rolls::before,
 #WarmRolls::before,
 #PremiumRolls::before,
@@ -194,7 +207,7 @@ a {
 #Sets::before,
 #Inari::before,
 #Onigiri::before,
-#SushiShawarma::before{
+#SushiShawarma::before {
     content: "";
     display: block;
     height: 100px;
